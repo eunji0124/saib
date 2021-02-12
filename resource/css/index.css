@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+@import url(../css/font-reset.css);
+
+/* ********************** 초기화 설정 ********************** */
+html{font: 10px 'Spoqa Han Sans Regular',sans-serif; min-width: 1000px;}
+body{font-size: 1.2rem; color: #3b3f56;}
+img{width: 100%; vertical-align: bottom;}
+/* ********************** 전체영역 설정 ********************** */
+.container{width: 1000px; height: 100%; margin: auto; position: relative;}
+
+.title{font-size: 4rem; line-height: 5rem; margin-bottom: 9rem;
+  padding-top: 9rem; font-weight: 100;}
+.btn01{display: block; background-color: #e7acbd; color: #ffffff; cursor: pointer; width: 160px;  font-size: 20px; height: 40px; border: 0px; line-height: 40px; text-align: center;}
+
+/* ********************** 개별영역 설정 ********************** */
+header{ position: sticky; left: 0; top: 0; z-index: 99;}
+/* ********************** top ********************** */
+.top_banner{min-width: 1000px;}
+.top_banner img{vertical-align: bottom;}
+/* ********************** top gnb ********************** */
+.gnb_area{width: 100%; background: #fce8ec; text-transform: uppercase; font-family: 'CeraPRO-Bold'; font-size: 14px; height: 12rem;}
+.gnb_area .container{display: flex; align-items: center; justify-content: center;}
+.gnb_area .menu_bar{ width: 100%; display: flex; align-items: center; justify-content: center;}
+.gnb_area .menu_bar ul li{float: left; position: relative;}
+.gnb_area .menu_bar ul.menu_bar_left li{margin-right: 36px;}
+.gnb_area .menu_bar ul.menu_bar_right li{margin-left: 36px;}
+.gnb_area .menu_bar ul li a{display: inline-block; text-transform: uppercase; font-family: 'CeraPRO-Bold';}
+.gnb_area .menu_bar ul li .icon{display: inline-block; width: 13px;
+  height: 13px; margin-left: 4px; line-height: 0; vertical-align: middle;}
+.gnb_area .menu_bar ul li .coupon{ position: absolute; left: 50%; top: 100%; margin-left: -35px; width: 70px; height: 30px;}
+.gnb_area .menu_bar ul li .count{color: #e7acbd;}
+
+.gnb_area .logo{ background: url(../images/saib-logo.svg) no-repeat; width: 130px; height: 54px; margin: 0 24px;}
+.gnb_area .logo a{display: inline-block; width: 100%;height: 100%;}
+.gnb_area .sns_group{display: flex; margin-left: 36px;}
+.gnb_area .sns_group a{margin: 0 10px 0 0; padding: 0; width: 17px;
+  height: 17px; display: block;}
+.gnb_area .sns_group .en_site{background: url(../images/global5.png) no-repeat; background-size: 17px; background-position: center;}
+.gnb_area .sns_group .instagram{background: url(../images/insta5.png) no-repeat; background-size: 17px; background-position: center;}
+.gnb_area .sns_group .facebook{background: url(../images/fb5.png) no-repeat; background-size: 17px; background-position: center;}
+
+/* ********************** section.video ********************** */
+section.video{ position: relative; height: auto; padding-top: 56.25%;}
+/* ********************** section.products ********************** */
+section.products{height: 80rem; background: url(../images/section2_bg.png) no-repeat bottom; background-size: cover;}
+section.products .box_wrap{display: flex; justify-content: space-between;}
+section.products .box_wrap .box{width: 30%;}
+.product_info{ color: #797979; font-size: 1.4rem;}
+.product_name{ color: #282C49; font-size: 1.6rem;}
+.price{ color: #282C49; font-size: 1.6rem;line-height: 2em;}
+.price .red{ color: #BE4B78;}
+section.products .btn01{    margin: 5rem auto 0; }
+
+/* ********************** section.promise ********************** */
+.swiper span{width: 12.5px; height: 12.5px; display:inline-block; border-radius:50%; background:#dedbdb; border:0px;}
+.swiper span.active{background: #f3bfc8;}
+
+.big_slide .swiper {margin: calc((165px - 12.5px)/2) auto; text-align: center;}
+.big_slide .swiper span{ margin:4px}
+.big_slide_frame{height: 50rem;}
+.big_slide_frame .slide_wrap{ width: 100%; height: 100%; margin: 0 auto; position: relative; overflow: hidden; z-index: 1;}
+.big_slide_frame .slide_wrap ul{width: 5000px; height: 100%; display: flex; flex-wrap: wrap;}
+.big_slide_frame .slide_wrap li{width: 1000px; height: 100%; display: flex;}
+.big_slide_frame .slide_wrap .left_box{width: 50%; background: url(../images/slide_image01.jpeg)no-repeat; background-size: cover;}
+.big_slide_frame .slide_wrap .right_box{width: 50%; background: #fce8ec; padding-left: 2.5rem;}
+.big_slide_frame .slide_wrap .right_box .page_number{color: #d0d0d0; font-size: 5rem; margin-top: 15px;}
+.big_slide_frame .slide_wrap .right_box .en_explane{ font-size: 5.2rem; color: #e7acbd; margin-top: 12.8rem; line-height: 1em;}
+.big_slide_frame .slide_wrap .right_box .ko_explane{font-size: 1.8rem; margin-top: 3rem;}
+
+.three_slide{height: 60rem;}
+.three_slide_frame .slide_wrap{ width: 100%; height: 100%; margin: 0 auto; position: relative; overflow: hidden; z-index: 1;}
+.three_slide_frame .slide_wrap ul{width: 200%; height: 100%; display: flex; flex-wrap: wrap;}
+.three_slide_frame .slide_wrap li{width: 313px; height: 400px; float: left;
+  margin-right: 30px; background-color: #f8e4e8; position: relative; cursor: pointer;}
+.three_slide_frame .header{ padding: 4rem 3rem 0; display: flex; align-items: center;}
+.three_slide_frame .header .imageEmoji{ width: 32px; height: 32px; background: url(../images/emoji_1.svg)no-repeat;}
+.three_slide_frame .header .imageStar{    background: url(../images/start_review.svg)no-repeat; width: 140px; height: 21px; margin-top: 4rem; margin-left: 1rem;}
+.three_slide_frame .slide_wrap .review{font-size: 1.4rem; color: #767676;
+  line-height: 1.5em; padding: 1.5rem 3rem 0.8rem;}
+.three_slide_frame .slide_wrap .review_data{font-size: 1.4rem; color: #e0a6b8; line-height: 1.5em; padding: 0 3rem; text-align: right; position: absolute; bottom: 3rem; right: 0;}
+.three_slide .swiper{ text-align: center; padding-top: 3rem;}
+.three_slide .swiper span{}
+
+/* ********************** section.campaign ********************** */
+section.campaign{background: #fce8ec;  padding-bottom: 20rem;}
+section.campaign .campaign_wrap{display: flex;}
+section.campaign .img_box{    background: url(../images/saib_campaign.jpg)no-repeat; width: 650px; height: 445px;}
+section.campaign .text_box{padding-left: 2.5rem;}
+section.campaign .text_box h3{font-size: 5rem;line-height: 4rem; margin-top: 13.8rem;color: #e7acbd;}
+section.campaign .text_box p{font-size: 1.8rem; line-height: 2.6rem; margin-top: 13.3rem;}
+
+/* ********************** section.link ********************** */
+section.link{}
+section.link .container{display: flex; justify-content: space-between;}
+section.link .link_box {width: calc(100% / 3); padding: 3rem 6rem; margin: 3rem 0; border-right: 1px solid #ebb2c0;}
+section.link .link_box a{width: 100%; height: 100%; display: block;}
+section.link .link_box:last-child{border-right: 0px;}
+section.link .link_box .title{margin: 0; padding: 0;}
+section.link .link_box p{font-size: 1.8rem; color: #e7acbd;}
+section.link .certification_mark{ background-color: #fce8ec; text-align: center;}
+section.link .certification_mark img{ max-width: 1000px; margin: 0 auto;}
+
+/* ********************** section.instagram_link ********************** */
+section.instagram_link{margin: 10rem auto;}
+section.instagram_link h2{font-size: 2.8rem; text-align: center; font-family: 'CeraPRO-Thin'; margin: 100px auto;}
+section.instagram_link .container{display: flex; flex-wrap: wrap;}
+section.instagram_link .container .link_box{width: calc(100% / 3); padding: 2px;}
+section.instagram_link .container .link_box a{    display: block;
+  width: 100%;
+  height: 100%;}
+
+  /* ********************** footer ********************** */
+  footer{width: 100%; position: relative; background: #fce8ec; color: #c5768c; font-weight: 300;}
+  footer .container{ padding: 5rem 0 10rem 0;}
+  footer .bold{font-weight: 400;}
+  footer .dark_pink{color: #cca6b0;}
+  footer .footer_banner{ position: fixed; bottom: 0; width: 100%; z-index: 10; min-width: 1000px;}
+  footer .footer_bottom{margin-top: 2rem;}
+
+  .float_box{position: fixed; right: 30px; bottom: 26px; z-index: 1000; display: flex; flex-direction: column; align-items: center;}
+  .float_box .up_btn{display: block; width: 50px; height: 50px;  background: url(../images/totop2.png) no-repeat; background-size: cover;}
+  .float_box .message_btn{position: relative; width: 62px; height: 62px; display: flex; justify-content: center; align-items: center; background-color: rgb(252, 232, 236); border-radius: 50%; margin-top: 12px;}
+  .float_box .message_btn::after{background: url(../images/ch-new-launcher-icon-68.png) no-repeat; background-size: cover;    content: ""; display: block; flex-basis: initial; width: 34px; height: 34px; background-size: 136px; background-position: 0px -34px;}
